@@ -60,7 +60,6 @@ function avgWeight(data){
         }
         else{
             total = total + (data[i].weight *10);
-            console.log(total);
         }
         
     }
@@ -70,6 +69,16 @@ function avgWeight(data){
 
 avgWeight(stats);
 
+const showSpecificWeight = (weight) =>{
+
+    for(i = 0; i < stats.length; i++){
+        if(stats[i].weight <= weight){
+            console.log(stats[i].weight);
+        }
+    }
+
+} 
+showSpecificWeight(98);
 
 
 // Tasks: 
